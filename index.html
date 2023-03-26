@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monsters-5e</title>
+  <link rel="stylesheet" href="modnorm.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>DnD Monsters-5e</h1>
+  <p class="gray">Visit the API documentation at <a href=" https://www.dnd5eapi.co/docs/"> https://www.dnd5eapi.co/docs/</a></p>
+  <div class="make">
+    <form autocomplete="off">
+      <label for="search">Enter a monster name:</label>
+      <input id="search" type="text" name="searchbar" placeholder="All lowercase, use dashes instead of spaces">
+    </form>
+    <button onclick="getData()">Fetch</button>
+    <!-- <button onclick="searchTry()">Search</button> -->
+  </div>
+  <article class="card">
+    <header>
+      <h2 id="name">Sample Name</h2>
+      <p id="kind">Size Type, Law good</p>
+    </header>
+    <section class="prime">
+      <p>Armor class <span id="ac"></span></p>
+      <p>Hit points <span id="hp"></span></p>
+      <p>Speed <span id="spd"></span></p>
+    </section>
+    <section class="ability">
+      <span>STR <i id="str"></i></span>
+      <span>DEX <i id="dex"></i></span>
+      <span>CON <i id="con"></i></span>
+      <span>INT <i id="int"></i></span>
+      <span>WIS <i id="wis"></i></span>
+      <span>CHA <i id="cha"></i></span>
+    </section>
+    <section class="quality" id="qualities">
+      <p class="hidden" id="saves"></p>
+      <p class="hidden" id="skills"></p>
+      <p class="hidden" id="vulnerabilities"></p>
+      <p class="hidden" id="resistances"></p>
+      <p class="hidden" id="immunities"></p>
+      <p class="hidden" id="cond-immunities"></p>
+      <p class="hidden" id="senses">
+        <span class="hidden" id="bs"></span>
+        <span class="hidden" id="dv"></span>
+        <span class="hidden" id="trem"></span>
+        <span class="hidden" id="sight"></span>
+        <span class="hidden" id="pp"></span>
+      </p>
+      <p class="hidden" id="languages"></p>
+      <p class="hidden" id="challenges"></p>
+    </section>
+    <section class="actions">
+      <div class="char" id="traits">
+      </div>
+      <div class="char" id="actions">
+        <h3>Actions</h3>
+      </div>
+      <div class="char hidden" id="legend">
+        <h3>Legendary Actions</h3>
+      </div>
+    </section>
+  </article>
+</main>
+<script src="main.js"></script>
+</body>
+</html>
